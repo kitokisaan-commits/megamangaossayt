@@ -1,0 +1,51 @@
+API error UNIQUE constraint failed: titles.slug
+✔ anonymous administration is denied (44.789073ms)
+✔ cross-origin mutation is denied (0.790222ms)
+✔ wrong password rejected (37.522899ms)
+✔ bootstrap signs in with HttpOnly cookie and no password hash (33.562995ms)
+✔ first login cannot access admin operations (0.889652ms)
+✔ password rotation invalidates old session and credential (99.565582ms)
+✔ create draft series (2.343736ms)
+✔ draft series is not public (0.49688ms)
+✔ duplicate slug gives a useful conflict (1.445651ms)
+✔ create decimal chapters and numeric sort (3.938182ms)
+✔ empty chapter cannot publish (0.858786ms)
+✔ natural ZIP filename order and traversal rejection (6.114024ms)
+✔ valid image import preserves dimensions and source (25.493386ms)
+✔ draft images cannot be accessed anonymously (0.667317ms)
+✔ ZIP imports naturally sorted pages, ignoring system files (69.003259ms)
+✔ path traversal ZIP is refused (6.985739ms)
+✔ junk-only ZIP is refused (3.146918ms)
+✔ fake image extension is rejected by actual decoding (5.750245ms)
+✔ PDF renders each page, keeping portrait/landscape aspect ratio (1122.717429ms)
+Warning: Invalid PDF header version: corrupt
+Warning: Invalid PDF header version: corrupt
+Warning: Indexing all PDF objects
+API error Invalid PDF structure.
+✔ corrupt PDF rejected (5.035617ms)
+✔ reordering pages persists (2.619431ms)
+✔ invalid reorder cannot inject another page (0.584401ms)
+✔ rotation changes dimensions (118.915905ms)
+✔ publishing exposes chapter only after title is also published (3.35373ms)
+✔ search finds alternative names (0.508927ms)
+✔ scheduled chapter stays invisible until due (1.559653ms)
+✔ page deletion removes source assets and metadata (2.184335ms)
+✔ superadmin can create editor (128.787448ms)
+✔ editor cannot manage admins or unassigned content (0.9542ms)
+✔ editor assignment grants only permitted content (1.603779ms)
+✔ disabling account invalidates active session (0.945376ms)
+✔ superadmin cannot accidentally delete self (0.646485ms)
+✔ upload leases are atomic (0.266011ms)
+✔ page replacement preserves position and cleans previous asset (27.740732ms)
+✔ malformed JSON gives a clear client error (0.625073ms)
+✔ chunk size is enforced even without Content-Length (1.946867ms)
+✔ archiving a title hides all its chapters but retains recoverable references (0.889051ms)
+✔ audit records actual privileged actions (0.421677ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2165.47433
